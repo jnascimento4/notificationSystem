@@ -1,0 +1,163 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phoneNumber": "1234567890",
+      "subscribed": ["Sports", "Movies"],
+      "channels": ["SMS", "E-mail"]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "phoneNumber": "9876543210",
+      "subscribed": ["Finance", "Movies"],
+      "channels": ["E-mail", "Push Notification"]
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "email": "michaeljohnson@example.com",
+      "phoneNumber": "5555555555",
+      "subscribed": ["Sports"],
+      "channels": ["SMS", "Push Notification"]
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "email": "emilydavis@example.com",
+      "phoneNumber": "9999999999",
+      "subscribed": ["Finance"],
+      "channels": ["SMS"]
+    },
+    {
+      "id": 5,
+      "name": "David Wilson",
+      "email": "davidwilson@example.com",
+      "phoneNumber": "1111111111",
+      "subscribed": ["Sports", "Finance"],
+      "channels": ["E-mail", "Push Notification"]
+    },
+    {
+      "id": 6,
+      "name": "Olivia Anderson",
+      "email": "oliviaanderson@example.com",
+      "phoneNumber": "2222222222",
+      "subscribed": ["Movies"],
+      "channels": ["E-mail"]
+    },
+    {
+      "id": 7,
+      "name": "James Brown",
+      "email": "jamesbrown@example.com",
+      "phoneNumber": "3333333333",
+      "subscribed": ["Sports"],
+      "channels": ["SMS"]
+    },
+    {
+      "id": 8,
+      "name": "Sophia Garcia",
+      "email": "sophiagarcia@example.com",
+      "phoneNumber": "4444444444",
+      "subscribed": ["Movies"],
+      "channels": ["Push Notification"]
+    },
+    {
+      "id": 9,
+      "name": "Daniel Taylor",
+      "email": "danieltaylor@example.com",
+      "phoneNumber": "5555555555",
+      "subscribed": ["Sports", "Finance", "Movies"],
+      "channels": ["E-mail", "SMS", "Push Notification"]
+    },
+    {
+      "id": 10,
+      "name": "Isabella Lewis",
+      "email": "isabellalewis@example.com",
+      "phoneNumber": "6666666666",
+      "subscribed": ["Finance"],
+      "channels": ["E-mail"]
+    },
+    {
+      "id": 11,
+      "name": "William Rodriguez",
+      "email": "williamrodriguez@example.com",
+      "phoneNumber": "7777777777",
+      "subscribed": ["Sports", "Movies"],
+      "channels": ["SMS"]
+    },
+    {
+      "id": 12,
+      "name": "Mia Martinez",
+      "email": "miamartinez@example.com",
+      "phoneNumber": "8888888888",
+      "subscribed": ["Sports", "Finance"],
+      "channels": ["Push Notification"]
+    },
+    {
+      "id": 13,
+      "name": "Benjamin Clark",
+      "email": "benjaminclark@example.com",
+      "phoneNumber": "9999999999",
+      "subscribed": ["Movies"],
+      "channels": ["E-mail", "SMS"]
+    },
+    {
+      "id": 14,
+      "name": "Ava Hernandez",
+      "email": "avahernandez@example.com",
+      "phoneNumber": "1111111111",
+      "subscribed": ["Sports"],
+      "channels": ["E-mail"]
+    },
+    {
+      "id": 15,
+      "name": "Ethan Young",
+      "email": "ethanyoung@example.com",
+      "phoneNumber": "2222222222",
+      "subscribed": ["Finance"],
+      "channels": ["Push Notification"]
+    },
+    {
+      "id": 16,
+      "name": "Charlotte Moore",
+      "email": "charlottemoore@example.com",
+      "phoneNumber": "3333333333",
+      "subscribed": ["Sports"],
+      "channels": ["SMS", "Push Notification"]
+    },
+    {
+      "id": 17,
+      "name": "Liam Rodriguez",
+      "email": "liamrodriguez@example.com",
+      "phoneNumber": "4444444444",
+      "subscribed": ["Finance", "Movies"],
+      "channels": ["E-mail", "SMS", "Push Notification"]
+    },
+    {
+      "id": 18,
+      "name": "Amelia Lee",
+      "email": "amelialee@example.com",
+      "phoneNumber": "5555555555",
+      "subscribed": ["Movies"],
+      "channels": ["E-mail", "Push Notification"]
+    },
+    {
+      "id": 19,
+      "name": "Henry Hill",
+      "email": "henryhill@example.com",
+      "phoneNumber": "6666666666",
+      "subscribed": ["Sports"],
+      "channels": ["SMS", "E-mail"]
+    },
+    {
+      "id": 20,
+      "name": "Sofia Scott",
+      "email": "sofiascott@example.com",
+      "phoneNumber": "7777777777",
+      "subscribed": ["Finance", "Movies"],
+      "channels": ["Push Notification"]
+    }
+  ]
+  

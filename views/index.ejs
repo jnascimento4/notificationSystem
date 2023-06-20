@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notification System</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Notification System</h1>
+    <h2>Submission Form</h2>
+    <form method="POST" action="/">
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="Sports">Sports</option>
+            <option value="Finance">Finance</option>
+            <option value="Movies">Movies</option>
+        </select>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+    <h2>Log History</h2>
+    <ul>
+        <% logs.forEach(function(log) { %>
+            <li><%= log %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
