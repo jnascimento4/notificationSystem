@@ -21,14 +21,38 @@ class NotificationSystem {
             subscriber.notify(message);
         });
     }
+
     writeToLog(log) {
-        fs.appendFileSync('./logs/notifications.log', log + '\n');
+        fs.appendFileSync('./logs/notifications.json', log + '\n');
     }
 
-    logNotification(category, messageType, userData) {
-        const log = `Category: ${category}, Message Type: ${messageType}, User Data: ${JSON.stringify(userData)}, Time: ${new Date()}`;
-        this.writeToLog(log);
+    logNotification(category, messageType, userData) {       
+    
+        // Ler o arquivo JSON existente e converter em um objeto JavaScript
+        let existingData = [];
+        try {
+            const fileContent = fs.readFileSync('./logs/notifications.json', 'utf-8');
+            existingData = fileContent ? JSON.parse(fileContent) : undefined;
+        } catch (error) {
+            console.error('Error reading existing log:', error);
+        }
+    
+        // Adicionar o novo log à lista existente
+        if(existingData != undefined){
+            userData.forEach(user => existingData.push(user))            
+        }else{
+            existingData = userData;
+        }
+        
+    
+        // Escrever o objeto JavaScript atualizado no arquivo JSON
+        try {
+            fs.writeFileSync('./logs/notifications.json', JSON.stringify(existingData, null, 2));
+        } catch (error) {
+            console.error('Error writing log:', error);
+        }
     }
+    
 }
 
 class SMSNotification {

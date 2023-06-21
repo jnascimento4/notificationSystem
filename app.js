@@ -16,18 +16,27 @@ app.use(express.static('public'));
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
 
+const filePath = './logs/notifications.json';
+fs.writeFileSync(filePath, '', { flag: 'w' });
+
 // Home route
 app.get('/', (req, res) => {
-    const logs = fs.readFileSync('./logs/notifications.log', 'utf-8').split('\n').filter(Boolean).reverse();
+    let logs = [];
+    const filePath = './logs/notifications.json';
+    
+    if (fs.existsSync(filePath) && fs.statSync(filePath).size > 0) {
+        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        logs = JSON.parse(fileContent);
+        logs.sort((a, b) => new Date(a.date) - new Date(b.date));
+    }
+    
     res.render('index', { logs });
 });
 
-// Notification submission route
 app.post('/', (req, res) => {
     const { category, message } = req.body;
     const messageType = `${category} message`;
-
-    // Logic to find subscribers based on category from the users.json file
+    
     const subscribers = users.filter((user) => user.subscribed.includes(category));
     subscribers.forEach((subscriber) => {
         if (subscriber.channels.includes('SMS')) {
@@ -39,6 +48,9 @@ app.post('/', (req, res) => {
         if (subscriber.channels.includes('Push Notification')) {
             notificationSystem.subscribe(category, new PushNotification());
         }
+        subscriber.date = new Date();
+        subscriber.message = message;
+        subscriber.categorySubmitted = category;
     });
 
     notificationSystem.sendNotification(category, message);
@@ -47,7 +59,6 @@ app.post('/', (req, res) => {
     res.redirect('/');
 });
 
-// Start the server
 const port = 3000;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

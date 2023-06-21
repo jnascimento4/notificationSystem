@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Notification System</title>
     <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
+
 <body>
     <h1>Notification System</h1>
     <h2>Submission Form</h2>
@@ -21,10 +23,19 @@
         <button type="submit">Send</button>
     </form>
     <h2>Log History</h2>
-    <ul>
+    <div class="log-history">
         <% logs.forEach(function(log) { %>
-            <li><%= log %></li>
-        <% }); %>
-    </ul>
+            <div class="log-item">
+                <span>Category Submitted: <%= log.categorySubmitted %></span><br>
+                <span>Message: <%= log.message %></span><br><br>
+                <span>Name: <%= log.name %></span><br>
+                <span>E-mail: <%= log.email %></span><br>
+                <span>Subscribed: <%= log.subscribed %></span><br>
+                <span>Channels: <%= log.channels %></span><br>
+                <span>Date: <%= log.date %></span><br>
+            </div>
+            <% }); %>
+    </div>
 </body>
+
 </html>
