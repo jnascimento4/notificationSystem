@@ -15,3 +15,10 @@ This project implements a notification system that allows sending messages to su
 
 ```bash
 git clone https://github.com/your-username/notification-system.git
+
+2. Install the dependencies:
+
+```bash
+cd notification-system
+npm install
+
