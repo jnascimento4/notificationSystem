@@ -17,8 +17,9 @@ This project implements a notification system that allows sending messages to su
 git clone https://github.com/your-username/notification-system.git
 
 2. Install the dependencies:
-
-```bash
-cd notification-system
 npm install
 
+3. Start the server:
+node app.js
+
+4. Open your browser and navigate to http://localhost:3000 to access the application.
