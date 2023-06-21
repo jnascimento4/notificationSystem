@@ -30,19 +30,3 @@ $ git clone https://github.com/your-username/notification-system.git
 2. Select the desired category from the dropdown menu and enter the message in the text area.
 3. Click the "Send" button to send the notification to the subscribers.
 4. The sent notifications will be logged in the log history section on the same page.
-
-## Project Structure
-
-├── app.js
-├── data
-│   └── users.json
-├── logs
-│   └── notifications.log
-├── models
-│   └── notificationSystem.js
-├── public
-│   └── styles.css
-├── tests
-│   └── notificationSystem.test.js
-└── views
-    └── index.ejs
